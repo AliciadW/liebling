@@ -4,7 +4,8 @@ You need to enable the members feature first.
 --}}
 
 <div class="l-subscribe-section__form">
-    <form id="contactForm" class="contact-form"
+    <form id="contactForm"
+          class="contact-form"
           method="post">
         <label for="full-name">Name</label>
         <input type="text" name="from_name" id="full-name" placeholder="What would you like to be called?" required>
@@ -25,7 +26,7 @@ You need to enable the members feature first.
                     document.getElementById("success").style.display = 'block';
                     document.getElementById("contactFormDiv").style.display = 'none';
                 }, function(error) {
-                    alert("Sorry, failed to send Message. Please try again later.")
+                    alert("Sorry, your message could not be sent. Please try again later.")
                 });
     }
 </script>
