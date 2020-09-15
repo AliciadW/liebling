@@ -8,12 +8,10 @@ You need to enable the members feature first.
     <form id="contactForm"
           class="contact-form"
           method="post">
-        <label for="full-name">Name</label>
-        <input type="text" name="from_name" id="full-name" placeholder="What would you like to be called?" required>
-<!--        <label for="full-name">Company</label>-->
-<!--        <input type="text" name="from_name" id="full-name" placeholder="Company">-->
-        <label for="email-address">Email Address</label>
-        <input type="email" name="from_email" id="email-address" placeholder="Your email address." required>
+        <label for="full">Name</label>
+        <input type="text" name="name" id="name" placeholder="Your name" required>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" placeholder="Your email address" required>
         <label for="message">Message</label>
         <textarea rows="5" name="message" id="message" placeholder="Your message to me" required></textarea>
         <button class="m-button primary block" type="submit" onclick="sendMessage(event);">{{t "Send"}}</button>
@@ -31,6 +29,7 @@ You need to enable the members feature first.
                 });
     }
 </script>
+
 <style>
     .contact-form {
         display: grid;
