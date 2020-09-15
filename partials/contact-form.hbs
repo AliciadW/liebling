@@ -7,11 +7,13 @@ You need to enable the members feature first.
     <form id="contactForm" class="contact-form"
           method="post">
         <label for="full-name">Name</label>
-        <input type="text" name="from_name" id="full-name" placeholder="How can I address you?" required>
+        <input type="text" name="from_name" id="full-name" placeholder="What would you like to be called?" required>
+        <label for="full-name">Company</label>
+        <input type="text" name="from_name" id="full-name" placeholder="Company">
         <label for="email-address">Email Address</label>
-        <input type="email" name="from_email" id="email-address" placeholder="Your email address" required>
+        <input type="email" name="from_email" id="email-address" placeholder="An email address where I can reach you." required>
         <label for="message">Message</label>
-        <textarea rows="5" name="message" id="message" placeholder="Your message" required></textarea>
+        <textarea rows="5" name="message" id="message" placeholder="Your message to me" required></textarea>
         <button class="m-button primary block" type="submit" onclick="sendMessage(event);">{{t "Send"}}</button>
     </form>
 </div>
@@ -44,7 +46,7 @@ You need to enable the members feature first.
     }
     .contact-form input:focus,
     .contact-form textarea:focus {
-        outline: 1px solid #3eb0ef;
+        outline: 1px solid #B77AA9;
         outline-offset: -1px;
     }
     .contact-form label[for="full-name"],
@@ -63,7 +65,7 @@ You need to enable the members feature first.
         grid-column-start: 2;
         justify-self: end;
         margin-top: 0.6em;
-        background: #3eb0ef;
+        background: #B77AA9;
         color: white;
         width: auto;
     }
